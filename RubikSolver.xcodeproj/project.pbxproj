@@ -1,0 +1,1011 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0134D187E0637FD12035D09F /* RubikSolverEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED1D831CAC4E35646D6B68BD /* RubikSolverEngine.cpp */; };
+		02EE90C61417760882F4FB07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BE236ED92CC42E4CD3F953 /* main.m */; };
+		06653D84BF5840D485A4B3A4 /* RubikColorClassifier.mm in Sources */ = {isa = PBXBuildFile; fileRef = 185A4A7D9B7FFBEEE756780F /* RubikColorClassifier.mm */; };
+		0E32537867F288E6CD543CDA /* RubikCoreMLModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 470F8A741F2880C03E8E38D0 /* RubikCoreMLModel.mm */; };
+		180E10BCDB1EC7FF09ECC9CC /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 43A078C2105BAF370105FEAB /* AppIcon.icns */; };
+		1924B1EC9044DA7EB3F424EF /* RubikThemeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDCABCA331301488F3257911 /* RubikThemeTests.mm */; };
+		1C2416052A48BC53FC5C3CCB /* RubikScanSession.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63BEAEF7A376C17C4AE201D2 /* RubikScanSession.mm */; };
+		209F14CE980DAFAB91188D9C /* libRubikCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C25F9E41EF4A4EF3753F9F2 /* libRubikCore.a */; };
+		32FA6C66DEB6D15764A09C39 /* cubiecube.c in Sources */ = {isa = PBXBuildFile; fileRef = C87FD361D9E94F2E3301F566 /* cubiecube.c */; };
+		341C54180F322119D5C0D4CE /* MainWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F53DFD35459AEE80862830A4 /* MainWindowController.mm */; };
+		34BE93A95F70CC8F20A27DBA /* RubikStepPanelController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21440F1D58297845E4BA2890 /* RubikStepPanelController.mm */; };
+		36F31B0AC924C9F753B2514C /* RubikCameraCapture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37181D434F160D287D6B92F1 /* RubikCameraCapture.mm */; };
+		42D9202DB0710BB07E42F87F /* RubikCameraGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = ECB11F1B5B2137BA7EE66DC4 /* RubikCameraGeometry.mm */; };
+		4E078F692437EE2D7E20D84C /* RubikCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7B15CC977FE2E1CE88E5A62 /* RubikCube.cpp */; };
+		6486AB8DDBFD74217DF527F4 /* RubikNeuralSolver.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCF6E95CBB37BCC8B1EEDC70 /* RubikNeuralSolver.mm */; };
+		65078D5F3C2A447F410A5028 /* RubikColorMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 230A807FB01DC98BEE162247 /* RubikColorMath.mm */; };
+		73E4BB9E69626C54D6A99D95 /* RubikNeuralSolverTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 907CFC819C699EAB07E15C64 /* RubikNeuralSolverTests.mm */; };
+		77CF8CDDCFEEF87FA1CA6D94 /* RubikHelpWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8794BF9225A97C317E2AD85A /* RubikHelpWindowController.mm */; };
+		83F558266D9980FC6BA014E9 /* RubikValidation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B7643AB8E1DA58867282A88 /* RubikValidation.cpp */; };
+		84293E37CB38BE0110A3D924 /* coordcube.c in Sources */ = {isa = PBXBuildFile; fileRef = 250DABA8C51FB8208F8C2FDB /* coordcube.c */; };
+		89C0BB71A5CD4EC0D1E44DE8 /* RubikStepPanelControllerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F40B3BFB122DDEC80A15874 /* RubikStepPanelControllerTests.mm */; };
+		8D05F0A4A8EAE53009CB1E19 /* RubikPDFExporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E0573CB006397CAFD9F604A /* RubikPDFExporter.mm */; };
+		96B108C4F0C8CF71FFD1CD59 /* libRubikCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C25F9E41EF4A4EF3753F9F2 /* libRubikCore.a */; };
+		9BD1BFB20BDEEE7B424B6DC3 /* RubikMetalSolver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0EE98E887214CB9ED07E /* RubikMetalSolver.mm */; };
+		A1EEB40717F0EFA375AA84DF /* RubikFaceUploadSheetController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B532E35E54529D9113C6C143 /* RubikFaceUploadSheetController.mm */; };
+		A4E6B1F52DDD4C40696EA0E5 /* RubikColorMathTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = B484304EB5FEE64187C96F17 /* RubikColorMathTests.mm */; };
+		A63D342D1569A8F27C39DAB7 /* RubikCubeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941841D44031DA3EC6DD71C6 /* RubikCubeTests.mm */; };
+		A77BE78C7945C15B2662A265 /* search.c in Sources */ = {isa = PBXBuildFile; fileRef = CF8BEDD0D4DAA60BF5A939B6 /* search.c */; };
+		AF2F6E719A3F453E7C6FF44C /* RubikCameraOverlayView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2488CB6EE92470811CADC636 /* RubikCameraOverlayView.mm */; };
+		B79550D4FD02D0482FE43A05 /* RubikScanSessionTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6F5026925D6B510121FFE /* RubikScanSessionTests.mm */; };
+		BE8AE1193E2544D6738CE584 /* RubikCameraGeometryTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 773EF61D70025D56614387EA /* RubikCameraGeometryTests.mm */; };
+		BF488794066C1B61ABD365EC /* Rubik3DView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79BB698B2952416E9F632098 /* Rubik3DView.mm */; };
+		BF760301134FC97869353772 /* RubikTheme.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51E786750F084516AA7C3A8D /* RubikTheme.mm */; };
+		C5D1609401394344B0196507 /* RubikOrientation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E119C512E0D06A0492D76 /* RubikOrientation.cpp */; };
+		C630F15FCBA7754EE65C72CD /* RubikRandomGeneratorSheetController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ACB6D879F84BF327DD13B80D /* RubikRandomGeneratorSheetController.mm */; };
+		C6F78ED0E96664833BE6EC65 /* facecube.c in Sources */ = {isa = PBXBuildFile; fileRef = 59051B8DB814E51F45D01443 /* facecube.c */; };
+		C8F555CE224E24182D9DF3CE /* prunetable_helpers.c in Sources */ = {isa = PBXBuildFile; fileRef = E3CC57F6442B79D99729F9F0 /* prunetable_helpers.c */; };
+		C95F221EB19108D52ACD04B4 /* RubikSolverEngineTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 82A6FF286830DE89975D74C5 /* RubikSolverEngineTests.mm */; };
+		CCC733A2770F5CD1C7382043 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8123CA5C4FA4EA500B93A814 /* AppKit.framework */; };
+		DE46772399EB0735CA0161E1 /* RubikCoreSmokeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08F2E843FD9C57F256D7DE67 /* RubikCoreSmokeTests.mm */; };
+		DEE8B74200A19601796C4633 /* RubikFaceRecognitionTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BC08F2CD2681AC56FBC1A /* RubikFaceRecognitionTests.mm */; };
+		E563CAEB03C53CDEAAA4CF91 /* DeepCubeA.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = D5B8AAFADAA6C2FE369F5E5F /* DeepCubeA.mlmodelc */; };
+		ED35C4320C0E5BF844AC94E8 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5CD57C0E7E655D8F9B63C11 /* AppDelegate.mm */; };
+		F2825AADED4194D497FE90FB /* SampleImages in Resources */ = {isa = PBXBuildFile; fileRef = D16BF7A4302D9B8A51CD8DC9 /* SampleImages */; };
+		FF21178FD75C3B3859048C8D /* LaunchUITests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1ECCBA944E33A54DD6BCF84D /* LaunchUITests.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06EF0E92E88CB271DE1299D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309015C639B33AF7D4CBC263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842E33B33571F11F14D7EEB6;
+			remoteInfo = RubikSolver;
+		};
+		1FEB28090A6A41D4AD5A9BAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309015C639B33AF7D4CBC263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71623FFA5F4DB4BA48235D4;
+			remoteInfo = RubikCore;
+		};
+		757DA56390A64135CA480D27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309015C639B33AF7D4CBC263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842E33B33571F11F14D7EEB6;
+			remoteInfo = RubikSolver;
+		};
+		9D705BA0CFF03B02329EE40D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309015C639B33AF7D4CBC263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71623FFA5F4DB4BA48235D4;
+			remoteInfo = RubikCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031B3915762075816F906159 /* RubikSolver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RubikSolver.entitlements; sourceTree = "<group>"; };
+		08F2E843FD9C57F256D7DE67 /* RubikCoreSmokeTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikCoreSmokeTests.mm; sourceTree = "<group>"; };
+		0B7643AB8E1DA58867282A88 /* RubikValidation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RubikValidation.cpp; sourceTree = "<group>"; };
+		11C7109B48FE65DAD3B35250 /* RubikPDFExporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikPDFExporter.h; sourceTree = "<group>"; };
+		1246C448FF4A08032F27053B /* RubikSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubikSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18124AF8991B0B3A266BD3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		185A4A7D9B7FFBEEE756780F /* RubikColorClassifier.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikColorClassifier.mm; sourceTree = "<group>"; };
+		1ECCBA944E33A54DD6BCF84D /* LaunchUITests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LaunchUITests.mm; sourceTree = "<group>"; };
+		21440F1D58297845E4BA2890 /* RubikStepPanelController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikStepPanelController.mm; sourceTree = "<group>"; };
+		230A807FB01DC98BEE162247 /* RubikColorMath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikColorMath.mm; sourceTree = "<group>"; };
+		2488CB6EE92470811CADC636 /* RubikCameraOverlayView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikCameraOverlayView.mm; sourceTree = "<group>"; };
+		250DABA8C51FB8208F8C2FDB /* coordcube.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = coordcube.c; sourceTree = "<group>"; };
+		293D0EF118D337959C422E3B /* RubikCameraCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikCameraCapture.h; sourceTree = "<group>"; };
+		2BC23E5024024A04FF8799C9 /* RubikColorClassifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikColorClassifier.h; sourceTree = "<group>"; };
+		2BF6F5026925D6B510121FFE /* RubikScanSessionTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikScanSessionTests.mm; sourceTree = "<group>"; };
+		2C1BC08F2CD2681AC56FBC1A /* RubikFaceRecognitionTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikFaceRecognitionTests.mm; sourceTree = "<group>"; };
+		2D5E0EE98E887214CB9ED07E /* RubikMetalSolver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikMetalSolver.mm; sourceTree = "<group>"; };
+		37181D434F160D287D6B92F1 /* RubikCameraCapture.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikCameraCapture.mm; sourceTree = "<group>"; };
+		3F740211AC80CF4A2885ED2D /* MainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		43A078C2105BAF370105FEAB /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		470F8A741F2880C03E8E38D0 /* RubikCoreMLModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikCoreMLModel.mm; sourceTree = "<group>"; };
+		4E0573CB006397CAFD9F604A /* RubikPDFExporter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikPDFExporter.mm; sourceTree = "<group>"; };
+		51E786750F084516AA7C3A8D /* RubikTheme.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikTheme.mm; sourceTree = "<group>"; };
+		52C8518301C72452DA37332C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		59051B8DB814E51F45D01443 /* facecube.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = facecube.c; sourceTree = "<group>"; };
+		63BEAEF7A376C17C4AE201D2 /* RubikScanSession.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikScanSession.mm; sourceTree = "<group>"; };
+		72BE236ED92CC42E4CD3F953 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		773EF61D70025D56614387EA /* RubikCameraGeometryTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikCameraGeometryTests.mm; sourceTree = "<group>"; };
+		79BB698B2952416E9F632098 /* Rubik3DView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Rubik3DView.mm; sourceTree = "<group>"; };
+		7C25F9E41EF4A4EF3753F9F2 /* libRubikCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRubikCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F40B3BFB122DDEC80A15874 /* RubikStepPanelControllerTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikStepPanelControllerTests.mm; sourceTree = "<group>"; };
+		8123CA5C4FA4EA500B93A814 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		82A6FF286830DE89975D74C5 /* RubikSolverEngineTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikSolverEngineTests.mm; sourceTree = "<group>"; };
+		83EA336561245AE93694851C /* Rubik3DView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rubik3DView.h; sourceTree = "<group>"; };
+		8530456301549F91C10D9504 /* RubikColorMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikColorMath.h; sourceTree = "<group>"; };
+		8794BF9225A97C317E2AD85A /* RubikHelpWindowController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikHelpWindowController.mm; sourceTree = "<group>"; };
+		907CFC819C699EAB07E15C64 /* RubikNeuralSolverTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikNeuralSolverTests.mm; sourceTree = "<group>"; };
+		941841D44031DA3EC6DD71C6 /* RubikCubeTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikCubeTests.mm; sourceTree = "<group>"; };
+		9BDB1CB897049525DF81AF61 /* RubikTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikTheme.h; sourceTree = "<group>"; };
+		9F8E119C512E0D06A0492D76 /* RubikOrientation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RubikOrientation.cpp; sourceTree = "<group>"; };
+		A5CD57C0E7E655D8F9B63C11 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		ACB6D879F84BF327DD13B80D /* RubikRandomGeneratorSheetController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikRandomGeneratorSheetController.mm; sourceTree = "<group>"; };
+		AEBC5CDE044D493F84BE4006 /* RubikSolverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubikSolverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B348573ECD75900B14F15644 /* RubikCameraOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikCameraOverlayView.h; sourceTree = "<group>"; };
+		B484304EB5FEE64187C96F17 /* RubikColorMathTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikColorMathTests.mm; sourceTree = "<group>"; };
+		B532E35E54529D9113C6C143 /* RubikFaceUploadSheetController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikFaceUploadSheetController.mm; sourceTree = "<group>"; };
+		BCF6E95CBB37BCC8B1EEDC70 /* RubikNeuralSolver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikNeuralSolver.mm; sourceTree = "<group>"; };
+		C46CCDC5C69C47409C025F01 /* RubikSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubikSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D0B787455430B66980590A /* RubikScanSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikScanSession.h; sourceTree = "<group>"; };
+		C87FD361D9E94F2E3301F566 /* cubiecube.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cubiecube.c; sourceTree = "<group>"; };
+		C9E5C80109C0BCC8C1BE8FC5 /* RubikRandomGeneratorSheetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikRandomGeneratorSheetController.h; sourceTree = "<group>"; };
+		CCB8E341BE2BEE6922561C0C /* RubikStepPanelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikStepPanelController.h; sourceTree = "<group>"; };
+		CF8BEDD0D4DAA60BF5A939B6 /* search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = search.c; sourceTree = "<group>"; };
+		D16BF7A4302D9B8A51CD8DC9 /* SampleImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SampleImages; sourceTree = SOURCE_ROOT; };
+		D5B8AAFADAA6C2FE369F5E5F /* DeepCubeA.mlmodelc */ = {isa = PBXFileReference; path = DeepCubeA.mlmodelc; sourceTree = "<group>"; };
+		E1B5ED7D1543AAC032E4A3E0 /* RubikCameraGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikCameraGeometry.h; sourceTree = "<group>"; };
+		E3CC57F6442B79D99729F9F0 /* prunetable_helpers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = prunetable_helpers.c; sourceTree = "<group>"; };
+		EA67C751C52C5AC2846504A4 /* RubikFaceUploadSheetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikFaceUploadSheetController.h; sourceTree = "<group>"; };
+		ECB11F1B5B2137BA7EE66DC4 /* RubikCameraGeometry.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikCameraGeometry.mm; sourceTree = "<group>"; };
+		ED1D831CAC4E35646D6B68BD /* RubikSolverEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RubikSolverEngine.cpp; sourceTree = "<group>"; };
+		EDCABCA331301488F3257911 /* RubikThemeTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RubikThemeTests.mm; sourceTree = "<group>"; };
+		F53DFD35459AEE80862830A4 /* MainWindowController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainWindowController.mm; sourceTree = "<group>"; };
+		F7910E44121507F4290D0BA3 /* RubikHelpWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubikHelpWindowController.h; sourceTree = "<group>"; };
+		F7B15CC977FE2E1CE88E5A62 /* RubikCube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RubikCube.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B56A8BC2AC7970EF0CC9BDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B108C4F0C8CF71FFD1CD59 /* libRubikCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722E6C237759B8A1554B8FA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209F14CE980DAFAB91188D9C /* libRubikCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE5DECEF82F2E5B3CEC697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC733A2770F5CD1C7382043 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0551685E38EF4EA05A79DBC0 /* RubikVision */ = {
+			isa = PBXGroup;
+			children = (
+				293D0EF118D337959C422E3B /* RubikCameraCapture.h */,
+				37181D434F160D287D6B92F1 /* RubikCameraCapture.mm */,
+				E1B5ED7D1543AAC032E4A3E0 /* RubikCameraGeometry.h */,
+				ECB11F1B5B2137BA7EE66DC4 /* RubikCameraGeometry.mm */,
+				B348573ECD75900B14F15644 /* RubikCameraOverlayView.h */,
+				2488CB6EE92470811CADC636 /* RubikCameraOverlayView.mm */,
+				2BC23E5024024A04FF8799C9 /* RubikColorClassifier.h */,
+				185A4A7D9B7FFBEEE756780F /* RubikColorClassifier.mm */,
+				8530456301549F91C10D9504 /* RubikColorMath.h */,
+				230A807FB01DC98BEE162247 /* RubikColorMath.mm */,
+				C4D0B787455430B66980590A /* RubikScanSession.h */,
+				63BEAEF7A376C17C4AE201D2 /* RubikScanSession.mm */,
+			);
+			path = RubikVision;
+			sourceTree = "<group>";
+		};
+		0A2C6EAAC1F870A31DD699FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C25F9E41EF4A4EF3753F9F2 /* libRubikCore.a */,
+				C46CCDC5C69C47409C025F01 /* RubikSolver.app */,
+				1246C448FF4A08032F27053B /* RubikSolverTests.xctest */,
+				AEBC5CDE044D493F84BE4006 /* RubikSolverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18EFE0A85FD5C422CFE20725 /* RubikSolverTests */ = {
+			isa = PBXGroup;
+			children = (
+				773EF61D70025D56614387EA /* RubikCameraGeometryTests.mm */,
+				B484304EB5FEE64187C96F17 /* RubikColorMathTests.mm */,
+				08F2E843FD9C57F256D7DE67 /* RubikCoreSmokeTests.mm */,
+				941841D44031DA3EC6DD71C6 /* RubikCubeTests.mm */,
+				2C1BC08F2CD2681AC56FBC1A /* RubikFaceRecognitionTests.mm */,
+				907CFC819C699EAB07E15C64 /* RubikNeuralSolverTests.mm */,
+				2BF6F5026925D6B510121FFE /* RubikScanSessionTests.mm */,
+				82A6FF286830DE89975D74C5 /* RubikSolverEngineTests.mm */,
+				7F40B3BFB122DDEC80A15874 /* RubikStepPanelControllerTests.mm */,
+				EDCABCA331301488F3257911 /* RubikThemeTests.mm */,
+			);
+			path = RubikSolverTests;
+			sourceTree = "<group>";
+		};
+		1C82CB087C8FD6D23AAB1845 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8123CA5C4FA4EA500B93A814 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20F56D17F5B105FF331E7F4E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43A078C2105BAF370105FEAB /* AppIcon.icns */,
+				D5B8AAFADAA6C2FE369F5E5F /* DeepCubeA.mlmodelc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24BAD234EA78E34EB0A4237B /* RubikSolver */ = {
+			isa = PBXGroup;
+			children = (
+				E571F39FC4DA7A13CD4C0CF0 /* App */,
+				20F56D17F5B105FF331E7F4E /* Resources */,
+				DE43B201681669EACEDB3CD7 /* RubikCore */,
+				350C9EC9EB8AB75C302A750B /* RubikExport */,
+				6939AB249BF47F6366986C7F /* RubikUI */,
+				0551685E38EF4EA05A79DBC0 /* RubikVision */,
+			);
+			path = RubikSolver;
+			sourceTree = "<group>";
+		};
+		283668B2AB0CFE215E11ADFF /* ckociemba */ = {
+			isa = PBXGroup;
+			children = (
+				250DABA8C51FB8208F8C2FDB /* coordcube.c */,
+				C87FD361D9E94F2E3301F566 /* cubiecube.c */,
+				59051B8DB814E51F45D01443 /* facecube.c */,
+				E3CC57F6442B79D99729F9F0 /* prunetable_helpers.c */,
+				CF8BEDD0D4DAA60BF5A939B6 /* search.c */,
+			);
+			path = ckociemba;
+			sourceTree = "<group>";
+		};
+		350C9EC9EB8AB75C302A750B /* RubikExport */ = {
+			isa = PBXGroup;
+			children = (
+				11C7109B48FE65DAD3B35250 /* RubikPDFExporter.h */,
+				4E0573CB006397CAFD9F604A /* RubikPDFExporter.mm */,
+			);
+			path = RubikExport;
+			sourceTree = "<group>";
+		};
+		40F41C5A39370AF5D2220392 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18EFE0A85FD5C422CFE20725 /* RubikSolverTests */,
+				9EBA731FB56ED44EBBAAD548 /* RubikSolverUITests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6939AB249BF47F6366986C7F /* RubikUI */ = {
+			isa = PBXGroup;
+			children = (
+				3F740211AC80CF4A2885ED2D /* MainWindowController.h */,
+				F53DFD35459AEE80862830A4 /* MainWindowController.mm */,
+				83EA336561245AE93694851C /* Rubik3DView.h */,
+				79BB698B2952416E9F632098 /* Rubik3DView.mm */,
+				EA67C751C52C5AC2846504A4 /* RubikFaceUploadSheetController.h */,
+				B532E35E54529D9113C6C143 /* RubikFaceUploadSheetController.mm */,
+				F7910E44121507F4290D0BA3 /* RubikHelpWindowController.h */,
+				8794BF9225A97C317E2AD85A /* RubikHelpWindowController.mm */,
+				C9E5C80109C0BCC8C1BE8FC5 /* RubikRandomGeneratorSheetController.h */,
+				ACB6D879F84BF327DD13B80D /* RubikRandomGeneratorSheetController.mm */,
+				CCB8E341BE2BEE6922561C0C /* RubikStepPanelController.h */,
+				21440F1D58297845E4BA2890 /* RubikStepPanelController.mm */,
+				9BDB1CB897049525DF81AF61 /* RubikTheme.h */,
+				51E786750F084516AA7C3A8D /* RubikTheme.mm */,
+			);
+			path = RubikUI;
+			sourceTree = "<group>";
+		};
+		9EBA731FB56ED44EBBAAD548 /* RubikSolverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1ECCBA944E33A54DD6BCF84D /* LaunchUITests.mm */,
+			);
+			path = RubikSolverUITests;
+			sourceTree = "<group>";
+		};
+		B6572A4D798C85AD433B70B6 = {
+			isa = PBXGroup;
+			children = (
+				24BAD234EA78E34EB0A4237B /* RubikSolver */,
+				40F41C5A39370AF5D2220392 /* Tests */,
+				D16BF7A4302D9B8A51CD8DC9 /* SampleImages */,
+				1C82CB087C8FD6D23AAB1845 /* Frameworks */,
+				0A2C6EAAC1F870A31DD699FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE43B201681669EACEDB3CD7 /* RubikCore */ = {
+			isa = PBXGroup;
+			children = (
+				283668B2AB0CFE215E11ADFF /* ckociemba */,
+				470F8A741F2880C03E8E38D0 /* RubikCoreMLModel.mm */,
+				F7B15CC977FE2E1CE88E5A62 /* RubikCube.cpp */,
+				2D5E0EE98E887214CB9ED07E /* RubikMetalSolver.mm */,
+				BCF6E95CBB37BCC8B1EEDC70 /* RubikNeuralSolver.mm */,
+				9F8E119C512E0D06A0492D76 /* RubikOrientation.cpp */,
+				ED1D831CAC4E35646D6B68BD /* RubikSolverEngine.cpp */,
+				0B7643AB8E1DA58867282A88 /* RubikValidation.cpp */,
+			);
+			path = RubikCore;
+			sourceTree = "<group>";
+		};
+		E571F39FC4DA7A13CD4C0CF0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52C8518301C72452DA37332C /* AppDelegate.h */,
+				A5CD57C0E7E655D8F9B63C11 /* AppDelegate.mm */,
+				18124AF8991B0B3A266BD3C6 /* Info.plist */,
+				72BE236ED92CC42E4CD3F953 /* main.m */,
+				031B3915762075816F906159 /* RubikSolver.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C5406AECD3BBE345BD49DD8 /* RubikSolverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0AFB28A87AD3E45BBAD63A9 /* Build configuration list for PBXNativeTarget "RubikSolverUITests" */;
+			buildPhases = (
+				14BE7523C8081BAA658F22C3 /* Sources */,
+				EAAE5DECEF82F2E5B3CEC697 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97B33D95EAB48A3D57902685 /* PBXTargetDependency */,
+			);
+			name = RubikSolverUITests;
+			packageProductDependencies = (
+			);
+			productName = RubikSolverUITests;
+			productReference = AEBC5CDE044D493F84BE4006 /* RubikSolverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		842E33B33571F11F14D7EEB6 /* RubikSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFABD460C8601C6DEBDBD36 /* Build configuration list for PBXNativeTarget "RubikSolver" */;
+			buildPhases = (
+				C1F034D1E1D4A5A4EEA055A4 /* Sources */,
+				380E412842EBE2B6A08EDF74 /* Resources */,
+				722E6C237759B8A1554B8FA4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36CDFB670FC9629497AFE67A /* PBXTargetDependency */,
+			);
+			name = RubikSolver;
+			packageProductDependencies = (
+			);
+			productName = RubikSolver;
+			productReference = C46CCDC5C69C47409C025F01 /* RubikSolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A71623FFA5F4DB4BA48235D4 /* RubikCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57AA9CB42A656BEB4FB097C /* Build configuration list for PBXNativeTarget "RubikCore" */;
+			buildPhases = (
+				A05677A90FC6F2A9E4433A85 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RubikCore;
+			packageProductDependencies = (
+			);
+			productName = RubikCore;
+			productReference = 7C25F9E41EF4A4EF3753F9F2 /* libRubikCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C5FE002EB8012BABDB79B223 /* RubikSolverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5511512241C0A6DC70533E58 /* Build configuration list for PBXNativeTarget "RubikSolverTests" */;
+			buildPhases = (
+				8004E4B0EB1DBA6FBDB9D402 /* Sources */,
+				1B56A8BC2AC7970EF0CC9BDF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0790C448A9095EBA974270D3 /* PBXTargetDependency */,
+				C728BAD1E9C11F3CDF95FB44 /* PBXTargetDependency */,
+			);
+			name = RubikSolverTests;
+			packageProductDependencies = (
+			);
+			productName = RubikSolverTests;
+			productReference = 1246C448FF4A08032F27053B /* RubikSolverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		309015C639B33AF7D4CBC263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0C5406AECD3BBE345BD49DD8 = {
+						ProvisioningStyle = Manual;
+						TestTargetID = 842E33B33571F11F14D7EEB6;
+					};
+					842E33B33571F11F14D7EEB6 = {
+						ProvisioningStyle = Manual;
+					};
+					A71623FFA5F4DB4BA48235D4 = {
+						ProvisioningStyle = Manual;
+					};
+					C5FE002EB8012BABDB79B223 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 3472DA4F4B8E2146E982038F /* Build configuration list for PBXProject "RubikSolver" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B6572A4D798C85AD433B70B6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0A2C6EAAC1F870A31DD699FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A71623FFA5F4DB4BA48235D4 /* RubikCore */,
+				842E33B33571F11F14D7EEB6 /* RubikSolver */,
+				C5FE002EB8012BABDB79B223 /* RubikSolverTests */,
+				0C5406AECD3BBE345BD49DD8 /* RubikSolverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		380E412842EBE2B6A08EDF74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180E10BCDB1EC7FF09ECC9CC /* AppIcon.icns in Resources */,
+				E563CAEB03C53CDEAAA4CF91 /* DeepCubeA.mlmodelc in Resources */,
+				F2825AADED4194D497FE90FB /* SampleImages in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14BE7523C8081BAA658F22C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF21178FD75C3B3859048C8D /* LaunchUITests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8004E4B0EB1DBA6FBDB9D402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8AE1193E2544D6738CE584 /* RubikCameraGeometryTests.mm in Sources */,
+				A4E6B1F52DDD4C40696EA0E5 /* RubikColorMathTests.mm in Sources */,
+				DE46772399EB0735CA0161E1 /* RubikCoreSmokeTests.mm in Sources */,
+				A63D342D1569A8F27C39DAB7 /* RubikCubeTests.mm in Sources */,
+				DEE8B74200A19601796C4633 /* RubikFaceRecognitionTests.mm in Sources */,
+				73E4BB9E69626C54D6A99D95 /* RubikNeuralSolverTests.mm in Sources */,
+				B79550D4FD02D0482FE43A05 /* RubikScanSessionTests.mm in Sources */,
+				C95F221EB19108D52ACD04B4 /* RubikSolverEngineTests.mm in Sources */,
+				89C0BB71A5CD4EC0D1E44DE8 /* RubikStepPanelControllerTests.mm in Sources */,
+				1924B1EC9044DA7EB3F424EF /* RubikThemeTests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A05677A90FC6F2A9E4433A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E078F692437EE2D7E20D84C /* RubikCube.cpp in Sources */,
+				C5D1609401394344B0196507 /* RubikOrientation.cpp in Sources */,
+				0134D187E0637FD12035D09F /* RubikSolverEngine.cpp in Sources */,
+				83F558266D9980FC6BA014E9 /* RubikValidation.cpp in Sources */,
+				84293E37CB38BE0110A3D924 /* coordcube.c in Sources */,
+				32FA6C66DEB6D15764A09C39 /* cubiecube.c in Sources */,
+				C6F78ED0E96664833BE6EC65 /* facecube.c in Sources */,
+				C8F555CE224E24182D9DF3CE /* prunetable_helpers.c in Sources */,
+				A77BE78C7945C15B2662A265 /* search.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F034D1E1D4A5A4EEA055A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED35C4320C0E5BF844AC94E8 /* AppDelegate.mm in Sources */,
+				341C54180F322119D5C0D4CE /* MainWindowController.mm in Sources */,
+				BF488794066C1B61ABD365EC /* Rubik3DView.mm in Sources */,
+				36F31B0AC924C9F753B2514C /* RubikCameraCapture.mm in Sources */,
+				42D9202DB0710BB07E42F87F /* RubikCameraGeometry.mm in Sources */,
+				AF2F6E719A3F453E7C6FF44C /* RubikCameraOverlayView.mm in Sources */,
+				06653D84BF5840D485A4B3A4 /* RubikColorClassifier.mm in Sources */,
+				65078D5F3C2A447F410A5028 /* RubikColorMath.mm in Sources */,
+				0E32537867F288E6CD543CDA /* RubikCoreMLModel.mm in Sources */,
+				A1EEB40717F0EFA375AA84DF /* RubikFaceUploadSheetController.mm in Sources */,
+				77CF8CDDCFEEF87FA1CA6D94 /* RubikHelpWindowController.mm in Sources */,
+				9BD1BFB20BDEEE7B424B6DC3 /* RubikMetalSolver.mm in Sources */,
+				6486AB8DDBFD74217DF527F4 /* RubikNeuralSolver.mm in Sources */,
+				8D05F0A4A8EAE53009CB1E19 /* RubikPDFExporter.mm in Sources */,
+				C630F15FCBA7754EE65C72CD /* RubikRandomGeneratorSheetController.mm in Sources */,
+				1C2416052A48BC53FC5C3CCB /* RubikScanSession.mm in Sources */,
+				34BE93A95F70CC8F20A27DBA /* RubikStepPanelController.mm in Sources */,
+				BF760301134FC97869353772 /* RubikTheme.mm in Sources */,
+				02EE90C61417760882F4FB07 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0790C448A9095EBA974270D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842E33B33571F11F14D7EEB6 /* RubikSolver */;
+			targetProxy = 06EF0E92E88CB271DE1299D7 /* PBXContainerItemProxy */;
+		};
+		36CDFB670FC9629497AFE67A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71623FFA5F4DB4BA48235D4 /* RubikCore */;
+			targetProxy = 9D705BA0CFF03B02329EE40D /* PBXContainerItemProxy */;
+		};
+		97B33D95EAB48A3D57902685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842E33B33571F11F14D7EEB6 /* RubikSolver */;
+			targetProxy = 757DA56390A64135CA480D27 /* PBXContainerItemProxy */;
+		};
+		C728BAD1E9C11F3CDF95FB44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71623FFA5F4DB4BA48235D4 /* RubikCore */;
+			targetProxy = 1FEB28090A6A41D4AD5A9BAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1126DF26DEC90604A95F035F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4CF98EB3B0E3A853E16CF18E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/RubikSolver/RubikCore",
+					"$(SRCROOT)/RubikSolver/RubikCore/ckociemba/include",
+					"$(SRCROOT)/RubikSolver/RubikVision",
+					"$(SRCROOT)/RubikSolver/RubikUI",
+					"$(SRCROOT)/RubikSolver/RubikExport",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Cocoa,
+					"-framework",
+					CoreML,
+					"-framework",
+					AVFoundation,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubik.solver.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RubikSolver.app/Contents/MacOS/RubikSolver";
+			};
+			name = Debug;
+		};
+		6191B379FEE9AC419217F306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/RubikSolver/RubikCore",
+					"$(SRCROOT)/RubikSolver/RubikCore/ckociemba/include",
+					"$(SRCROOT)/RubikSolver/RubikVision",
+					"$(SRCROOT)/RubikSolver/RubikUI",
+					"$(SRCROOT)/RubikSolver/RubikExport",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Cocoa,
+					"-framework",
+					CoreML,
+					"-framework",
+					AVFoundation,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubik.solver.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RubikSolver.app/Contents/MacOS/RubikSolver";
+			};
+			name = Release;
+		};
+		6890713F167044CB60983C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RubikSolver/App/RubikSolver.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/RubikSolver/RubikCore",
+					"$(SRCROOT)/RubikSolver/RubikCore/ckociemba/include",
+					"$(SRCROOT)/RubikSolver/RubikVision",
+					"$(SRCROOT)/RubikSolver/RubikUI",
+					"$(SRCROOT)/RubikSolver/RubikExport",
+				);
+				INFOPLIST_FILE = RubikSolver/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Cocoa,
+					"-framework",
+					Metal,
+					"-framework",
+					SceneKit,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					UniformTypeIdentifiers,
+					"-framework",
+					CoreML,
+					"-framework",
+					MetalPerformanceShaders,
+					"-framework",
+					MetalPerformanceShadersGraph,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubik.solver;
+				PRODUCT_NAME = RubikSolver;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6B75D149F3EC825C1A324D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubik.solver.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = RubikSolver;
+			};
+			name = Debug;
+		};
+		856EDCD00A33437412E02D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/RubikSolver/RubikCore",
+					"$(SRCROOT)/RubikSolver/RubikCore/ckociemba/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubik.RubikCore;
+				PRODUCT_NAME = RubikCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AA4CEE6A2A67E7E9F0F207A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B07B4F4A4250D728A827CEFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RubikSolver/App/RubikSolver.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/RubikSolver/RubikCore",
+					"$(SRCROOT)/RubikSolver/RubikCore/ckociemba/include",
+					"$(SRCROOT)/RubikSolver/RubikVision",
+					"$(SRCROOT)/RubikSolver/RubikUI",
+					"$(SRCROOT)/RubikSolver/RubikExport",
+				);
+				INFOPLIST_FILE = RubikSolver/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Cocoa,
+					"-framework",
+					Metal,
+					"-framework",
+					SceneKit,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					UniformTypeIdentifiers,
+					"-framework",
+					CoreML,
+					"-framework",
+					MetalPerformanceShaders,
+					"-framework",
+					MetalPerformanceShadersGraph,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubik.solver;
+				PRODUCT_NAME = RubikSolver;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B8DD9E1D3EA0203FA9C12450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubik.solver.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = RubikSolver;
+			};
+			name = Release;
+		};
+		F30B976A6F7ED6D4A5B35364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/RubikSolver/RubikCore",
+					"$(SRCROOT)/RubikSolver/RubikCore/ckociemba/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rubik.RubikCore;
+				PRODUCT_NAME = RubikCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3472DA4F4B8E2146E982038F /* Build configuration list for PBXProject "RubikSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1126DF26DEC90604A95F035F /* Debug */,
+				AA4CEE6A2A67E7E9F0F207A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5511512241C0A6DC70533E58 /* Build configuration list for PBXNativeTarget "RubikSolverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CF98EB3B0E3A853E16CF18E /* Debug */,
+				6191B379FEE9AC419217F306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F0AFB28A87AD3E45BBAD63A9 /* Build configuration list for PBXNativeTarget "RubikSolverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B75D149F3EC825C1A324D2B /* Debug */,
+				B8DD9E1D3EA0203FA9C12450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F57AA9CB42A656BEB4FB097C /* Build configuration list for PBXNativeTarget "RubikCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30B976A6F7ED6D4A5B35364 /* Debug */,
+				856EDCD00A33437412E02D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FBFABD460C8601C6DEBDBD36 /* Build configuration list for PBXNativeTarget "RubikSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07B4F4A4250D728A827CEFC /* Debug */,
+				6890713F167044CB60983C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 309015C639B33AF7D4CBC263 /* Project object */;
+}

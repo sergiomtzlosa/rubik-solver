@@ -1,0 +1,10 @@
+CompileFlags:
+  Add:
+    - -I/Users/sid/Desktop/rubik-lazy/RubikSolver/RubikCore
+    - -I/Users/sid/Desktop/rubik-lazy/RubikSolver/RubikVision
+    - -I/Users/sid/Desktop/rubik-lazy/RubikSolver/RubikUI
+    - -I/Users/sid/Desktop/rubik-lazy/RubikSolver/RubikExport
+    - -std=c++17
+    - -fobjc-arc
+    - -isysroot
+    - /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk

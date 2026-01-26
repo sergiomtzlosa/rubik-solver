@@ -1,0 +1,171 @@
+name: RubikSolver
+options:
+  bundleIdPrefix: com.rubik
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    CLANG_CXX_LANGUAGE_STANDARD: gnu++17
+    CLANG_CXX_LIBRARY: libc++
+    CLANG_ENABLE_MODULES: YES
+    CLANG_ENABLE_OBJC_ARC: YES
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+
+targets:
+  RubikCore:
+    type: library.static
+    platform: macOS
+    sources:
+      - path: RubikSolver/RubikCore
+        excludes:
+          - "*.mm"
+          - "*.h"
+          - "ckociemba/include/**"
+          - "ckociemba/solve.c"
+    settings:
+      base:
+        PRODUCT_NAME: RubikCore
+        SKIP_INSTALL: YES
+        HEADER_SEARCH_PATHS:
+          - "$(inherited)"
+          - "$(SRCROOT)/RubikSolver/RubikCore"
+          - "$(SRCROOT)/RubikSolver/RubikCore/ckociemba/include"
+
+  RubikSolver:
+    type: application
+    platform: macOS
+    sources:
+      - path: RubikSolver/App
+      - path: RubikSolver/RubikVision
+      - path: RubikSolver/RubikUI
+      - path: RubikSolver/RubikExport
+      - path: RubikSolver/RubikCore
+        includes:
+          - "*.mm"
+      - path: RubikSolver/Resources/DeepCubeA.mlmodelc
+        buildPhase: resources
+      - path: RubikSolver/Resources/AppIcon.icns
+        buildPhase: resources
+      - path: SampleImages
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - target: RubikCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rubik.solver
+        PRODUCT_NAME: RubikSolver
+        INFOPLIST_FILE: RubikSolver/App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: RubikSolver/App/RubikSolver.entitlements
+        HEADER_SEARCH_PATHS:
+          - "$(inherited)"
+          - "$(SRCROOT)/RubikSolver/RubikCore"
+          - "$(SRCROOT)/RubikSolver/RubikCore/ckociemba/include"
+          - "$(SRCROOT)/RubikSolver/RubikVision"
+          - "$(SRCROOT)/RubikSolver/RubikUI"
+          - "$(SRCROOT)/RubikSolver/RubikExport"
+        OTHER_LDFLAGS:
+          - "$(inherited)"
+          - "-framework"
+          - Cocoa
+          - "-framework"
+          - Metal
+          - "-framework"
+          - SceneKit
+          - "-framework"
+          - AVFoundation
+          - "-framework"
+          - CoreMedia
+          - "-framework"
+          - CoreVideo
+          - "-framework"
+          - CoreGraphics
+          - "-framework"
+          - UniformTypeIdentifiers
+          - "-framework"
+          - CoreML
+          - "-framework"
+          - MetalPerformanceShaders
+          - "-framework"
+          - MetalPerformanceShadersGraph
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/../Frameworks"
+
+  RubikSolverTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests/RubikSolverTests
+    dependencies:
+      - target: RubikSolver
+      - target: RubikCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rubik.solver.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/RubikSolver.app/Contents/MacOS/RubikSolver"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        HEADER_SEARCH_PATHS:
+          - "$(inherited)"
+          - "$(SRCROOT)/RubikSolver/RubikCore"
+          - "$(SRCROOT)/RubikSolver/RubikCore/ckociemba/include"
+          - "$(SRCROOT)/RubikSolver/RubikVision"
+          - "$(SRCROOT)/RubikSolver/RubikUI"
+          - "$(SRCROOT)/RubikSolver/RubikExport"
+        OTHER_LDFLAGS:
+          - "$(inherited)"
+          - "-framework"
+          - Cocoa
+          - "-framework"
+          - CoreML
+          - "-framework"
+          - AVFoundation
+
+  RubikSolverUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources:
+      - path: Tests/RubikSolverUITests
+    dependencies:
+      - target: RubikSolver
+      - sdk: AppKit.framework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rubik.solver.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: RubikSolver
+
+schemes:
+  RubikSolver:
+    build:
+      targets:
+        RubikSolver: all
+        RubikCore: all
+        RubikSolverTests: [test]
+        RubikSolverUITests: [test]
+    run:
+      config: Debug
+      executable: RubikSolver
+      macroExpansion: RubikSolver
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - name: RubikSolverTests
+          parallelizable: false
+        - name: RubikSolverUITests
+          parallelizable: false
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
