@@ -1,0 +1,74 @@
+# Xcode
+## User settings & workspace state
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+## Build artifacts & derived data
+build/
+DerivedData/
+*.moved-builder
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.app
+
+## Project backups & intermediate copies
+*.backup
+*.backup*
+*.bak
+
+# Swift Package Manager
+.build/
+Packages/
+
+# Clang, LSP & Compiler Artifacts
+.cache/
+.clangd/
+compile_commands.json
+*.o
+*.obj
+*.a
+*.dylib
+*.out
+*.exe
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# IDEs & Text Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Core ML export scratch output (the installed copy lives in RubikSolver/Resources)
+MLTraining/DeepCubeA.mlmodelc/
+MLTraining/DeepCubeA.mlpackage/
+
+# Logs & Temporary Files
+*.log
+*.tmp
+*.crash
+
+# Profiling output
+*.profraw
+.config
+.opencode
+MLTraining/__pycache__
+MLTraining/checkpoints

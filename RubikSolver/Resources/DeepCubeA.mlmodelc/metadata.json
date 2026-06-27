@@ -1,0 +1,77 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "Dual-head DeepCubeA ResMLP for Rubik's Cube heuristic search and policy guidance.",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 512 × 1)",
+        "shortDescription" : "Estimated cost-to-go (distance heuristic) to solved state [1, 1].",
+        "shape" : "[512, 1]",
+        "name" : "value",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 512 × 18)",
+        "shortDescription" : "Logits for 18 Singmaster moves [1, 18].",
+        "shape" : "[512, 18]",
+        "name" : "policy",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float16",
+    "modelParameters" : [
+
+    ],
+    "author" : "RubikSolver DeepCubeA Team",
+    "specificationVersion" : 8,
+    "license" : "MIT",
+    "mlProgramOperationTypeHistogram" : {
+      "Ios17.cast" : 1,
+      "Ios17.linear" : 7,
+      "Ios16.relu" : 5,
+      "Ios17.add" : 2
+    },
+    "computePrecision" : "Float16",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "14.0",
+      "tvOS" : "17.0",
+      "visionOS" : "1.0",
+      "watchOS" : "10.0",
+      "iOS" : "17.0",
+      "macCatalyst" : "17.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 512 × 324)",
+        "shortDescription" : "One-hot representation of 54 facelets x 6 colors [1, 324].",
+        "shape" : "[512, 324]",
+        "name" : "cube_state",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.conversion_date" : "2026-11-11",
+      "com.github.apple.coremltools.source" : "torch==2.12.0",
+      "com.github.apple.coremltools.version" : "9.0",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "DeepCubeA",
+    "method" : "predict"
+  }
+]

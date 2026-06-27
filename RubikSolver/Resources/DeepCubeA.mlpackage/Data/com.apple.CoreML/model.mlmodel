@@ -1,0 +1,528 @@
+»
+V
+
+cube_state:One-hot representation of 54 facelets x 6 colors [1, 324].*
+
+Äƒ†ÄRW
+valueAEstimated cost-to-go (distance heuristic) to solved state [1, 1].*	
+ÄêÄR>
+policy'Logits for 18 Singmaster moves [1, 18].*	
+ÄêÄ¢”
+QDual-head DeepCubeA ResMLP for Rubik's Cube heuristic search and policy guidance.RubikSolver DeepCubeA Team"MIT¢4
+#com.github.apple.coremltools.sourcetorch==2.12.0¢+
+$com.github.apple.coremltools.version9.0¢:
++com.github.apple.coremltools.source_dialectTorchScript¢:
+,com.github.apple.coremltools.conversion_date
+2026-11-11≤„)ı'
+mainÏ'
+"
+
+cube_state
+
+Ä
+ƒCoreML7º'
+CoreML7∞'valuepolicyx
+const"
+cube_state_to_fp16_dtype_0
+*0
+name(
+ 
+"
+cube_state_to_fp16_dtype_0*
+val
+
+
+"
+fp16∞
+const2
+input_layer_weight_to_fp16
+
+
+Ä
+ƒ*0
+name(
+ 
+"
+input_layer_weight_to_fp16*A
+val:
+
+
+Ä
+ƒ*"
+@model_path/weights/weight.bin@†
+const)
+input_layer_bias_to_fp16
+
+
+Ä*.
+name&
+
+"
+input_layer_bias_to_fp16*<
+val5
+
+
+Ä*$
+@model_path/weights/weight.binÄ¡(é
+cast'
+dtype
+
+cube_state_to_fp16_dtype_0
+x
+
+
+cube_state*
+cube_state_to_fp16
+
+
+Ä
+ƒ*
+name
+
+
+"
+cast_2À
+linear(
+weight
+
+input_layer_weight_to_fp16$
+bias
+
+input_layer_bias_to_fp16
+x
+
+cube_state_to_fp16*
+linear_0_cast_fp16
+
+
+Ä
+Ä*(
+name 
+
+"
+linear_0_cast_fp16w
+relu
+x
+
+linear_0_cast_fp16)
+input_3_cast_fp16
+
+
+Ä
+Ä*'
+name
+
+"
+input_3_cast_fp16∏
+const5
+res_block1_fc1_weight_to_fp16
+
+
+Ä
+Ä*3
+name+
+#
+!"
+res_block1_fc1_weight_to_fp16*C
+val<
+
+
+Ä
+Ä*$
+@model_path/weights/weight.bin¿—(ß
+const,
+res_block1_fc1_bias_to_fp16
+
+
+Ä*1
+name)
+!
+"
+res_block1_fc1_bias_to_fp16*=
+val6
+
+
+Ä*%
+@model_path/weights/weight.binÄ“®–
+linear+
+weight!
+
+res_block1_fc1_weight_to_fp16'
+bias
+
+res_block1_fc1_bias_to_fp16
+x
+
+input_3_cast_fp16*
+linear_1_cast_fp16
+
+
+Ä
+Ä*(
+name 
+
+"
+linear_1_cast_fp16w
+relu
+x
+
+linear_1_cast_fp16)
+input_7_cast_fp16
+
+
+Ä
+Ä*'
+name
+
+"
+input_7_cast_fp16π
+const5
+res_block1_fc2_weight_to_fp16
+
+
+Ä
+Ä*3
+name+
+#
+!"
+res_block1_fc2_weight_to_fp16*D
+val=
+
+
+Ä
+Ä*%
+@model_path/weights/weight.bin¿‚®ß
+const,
+res_block1_fc2_bias_to_fp16
+
+
+Ä*1
+name)
+!
+"
+res_block1_fc2_bias_to_fp16*=
+val6
+
+
+Ä*%
+@model_path/weights/weight.binÄ„®–
+linear+
+weight!
+
+res_block1_fc2_weight_to_fp16'
+bias
+
+res_block1_fc2_bias_to_fp16
+x
+
+input_7_cast_fp16*
+linear_2_cast_fp16
+
+
+Ä
+Ä*(
+name 
+
+"
+linear_2_cast_fp16í
+add
+x
+
+input_3_cast_fp16
+y
+
+linear_2_cast_fp16)
+input_9_cast_fp16
+
+
+Ä
+Ä*'
+name
+
+"
+input_9_cast_fp16x
+relu
+x
+
+input_9_cast_fp16*
+input_11_cast_fp16
+
+
+Ä
+Ä*(
+name 
+
+"
+input_11_cast_fp16π
+const5
+res_block2_fc1_weight_to_fp16
+
+
+Ä
+Ä*3
+name+
+#
+!"
+res_block2_fc1_weight_to_fp16*D
+val=
+
+
+Ä
+Ä*%
+@model_path/weights/weight.bin¿Û®ß
+const,
+res_block2_fc1_bias_to_fp16
+
+
+Ä*1
+name)
+!
+"
+res_block2_fc1_bias_to_fp16*=
+val6
+
+
+Ä*%
+@model_path/weights/weight.binÄÙ®—
+linear+
+weight!
+
+res_block2_fc1_weight_to_fp16'
+bias
+
+res_block2_fc1_bias_to_fp16
+x
+
+input_11_cast_fp16*
+linear_3_cast_fp16
+
+
+Ä
+Ä*(
+name 
+
+"
+linear_3_cast_fp16y
+relu
+x
+
+linear_3_cast_fp16*
+input_15_cast_fp16
+
+
+Ä
+Ä*(
+name 
+
+"
+input_15_cast_fp16π
+const5
+res_block2_fc2_weight_to_fp16
+
+
+Ä
+Ä*3
+name+
+#
+!"
+res_block2_fc2_weight_to_fp16*D
+val=
+
+
+Ä
+Ä*%
+@model_path/weights/weight.bin¿Ñ©ß
+const,
+res_block2_fc2_bias_to_fp16
+
+
+Ä*1
+name)
+!
+"
+res_block2_fc2_bias_to_fp16*=
+val6
+
+
+Ä*%
+@model_path/weights/weight.binÄÖ©—
+linear+
+weight!
+
+res_block2_fc2_weight_to_fp16'
+bias
+
+res_block2_fc2_bias_to_fp16
+x
+
+input_15_cast_fp16*
+linear_4_cast_fp16
+
+
+Ä
+Ä*(
+name 
+
+"
+linear_4_cast_fp16ï
+add
+x
+
+input_11_cast_fp16
+y
+
+linear_4_cast_fp16*
+input_17_cast_fp16
+
+
+Ä
+Ä*(
+name 
+
+"
+input_17_cast_fp16s
+relu
+x
+
+input_17_cast_fp16'
+input_cast_fp16
+
+
+Ä
+Ä*%
+name
+
+"
+input_cast_fp16Ø
+const0
+value_head_weight_to_fp16
+
+
+
+Ä*/
+name'
+
+"
+value_head_weight_to_fp16*C
+val<
+
+
+
+Ä*%
+@model_path/weights/weight.bin¿ï©Ä
+const'
+value_head_bias_to_fp16
+
+
+
+*-
+name%
+
+"
+value_head_bias_to_fp16*
+val
+
+
+
+
+:
+)*∏
+linear'
+weight
+
+value_head_weight_to_fp16#
+bias
+
+value_head_bias_to_fp16
+x
+
+input_cast_fp16
+value
+
+
+Ä
+*(
+name 
+
+"
+linear_5_cast_fp16±
+const1
+policy_head_weight_to_fp16
+
+
+
+Ä*0
+name(
+ 
+"
+policy_head_weight_to_fp16*C
+val<
+
+
+
+Ä*%
+@model_path/weights/weight.binÄ¶©ü
+const(
+policy_head_bias_to_fp16
+
+
+
+*.
+name&
+
+"
+policy_head_bias_to_fp16*<
+val5
+
+
+
+*%
+@model_path/weights/weight.bin¿∆´ª
+linear(
+weight
+
+policy_head_weight_to_fp16$
+bias
+
+policy_head_bias_to_fp16
+x
+
+input_cast_fp16
+policy
+
+
+Ä
+*(
+name 
+
+"
+linear_6_cast_fp16"Ê
+	buildInfoÿ"
+
+
+≈"¬
+6
+!
+
+"
+coremltools-version
+	
+"
+9.0
+A
+)
+!
+"
+coremltools-component-torch
+
+
+"
+2.12.0
+E
+(
+ 
+"
+coremltools-source-dialect
+
+"
+TorchScript
